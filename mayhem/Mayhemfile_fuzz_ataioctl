@@ -1,0 +1,9 @@
+project: savantenvs/smartmontools
+target: fuzz_ataioctl
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_ataioctl/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_ataioctl
+    libfuzzer: true
+    timeout: 30

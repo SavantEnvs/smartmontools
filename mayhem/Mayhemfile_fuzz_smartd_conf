@@ -1,0 +1,10 @@
+project: savantenvs/smartmontools
+target: fuzz_smartd_conf
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_smartd_conf/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_smartd_conf
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_smartd_conf/fuzz_smartd_conf.dict
+    timeout: 30

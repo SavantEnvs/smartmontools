@@ -1,0 +1,10 @@
+/* Minimal drive database for mayhem/test.sh: one entry for each synthetic fixture disk. */
+{ "VERSION: 1.0 mayhem-test", "-", "-", "", "" },
+{ "DEFAULT", "-", "-", "", "" },
+{ "Mayhem Test Spinning Disks",
+  "MAYHEMTEST HDD 1TB",
+  "FW1\\.00",
+  "Mayhem test warning: sample entry", "-v 9,minutes -v 197,increasing" },
+{ "Mayhem Test Solid State Drives",
+  "MAYHEMTEST SSD.*",
+  "", "", "-v 177,raw48,Wear_Leveling_Count" },

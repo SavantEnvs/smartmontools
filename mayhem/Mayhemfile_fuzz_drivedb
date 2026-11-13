@@ -1,0 +1,10 @@
+project: savantenvs/smartmontools
+target: fuzz_drivedb
+testsuite:
+  - https://$MAYHEM_DOMAIN/$MAYHEM_PROJECT/$MAYHEM_TARGET/testsuite.tar
+  - file://mayhem/fuzz_drivedb/testsuite
+cmds:
+  - cmd: /mayhem/fuzz_drivedb
+    libfuzzer: true
+    dictionary: /mayhem/mayhem/fuzz_drivedb/fuzz_drivedb.dict
+    timeout: 30

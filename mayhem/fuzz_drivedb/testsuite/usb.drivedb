@@ -1,0 +1,82 @@
+  { "USB: ; JMicron JMS578",
+    "0x0080:0x0578",
+    "", // 0x0104
+    "",
+    "-d sat"
+  },
+  { "USB: ; ",
+    "0x0080:0xa001",
+    "", // ORICO 2588US3: 0x0101, 0x0203
+    "",
+    "-d sat"
+  },
+  // Blueendless
+  { "USB: Blueendless; Initio",
+    "0x0204:0x3639", // U23QC
+    "",
+    "",
+    "-d sat"
+  },
+  // 0x0350 (?)
+  { "USB: ViPowER USB3.0 Storage; ",
+    "0x0350:0x0038",
+    "", // 0x1905
+    "",
+    "-d sat,12" // ATA output registers missing
+  },
+  // Hewlett-Packard
+  { "USB: HP Personal Media Drive; ",
+    "0x03f0:0x070c",
+    "",
+    "",
+    "-d usbsunplus"
+  },
+  { "USB: HP x911w; ",
+    "0x03f0:0x0c5c",
+    "",
+    "",
+     "-d sat"
+  },
+  { "USB: HP Desktop HD BD07; ", // 2TB
+    "0x03f0:0xbd07",
+    "",
+    "",
+    "-d sat"
+  },
+  // ALi
+  { "USB: ; ALi M5621", // USB->PATA
+    "0x0402:0x5621",
+    "",
+    "",
+    "" // unsupported
+  },
+  // VIA
+  { "USB: Connectland BE-USB2-35BP-LCM; VIA VT6204",
+    "0x040d:0x6204",
+    "",
+    "",
+    "" // unsupported
+  },
+  // Buffalo / Melco
+  { "USB: Buffalo; ",
+    "0x0411:0x0(157|181|1ce|1[df]9|1e[7a]|240|251|27e)", // 0x0157: HD-PEU2, 0x0181: HD-PVU2,
+      // 0x01ce: Duo, 0x01d9: HD-PCTU2 (0x0108), 0x01e7: HD-PNTU3, 0x01ea: HD-LBU2,
+      // 0x01f9: HD-PZU3 (0x0100), 0x0240: HD-PCFU3, 0x0251: HD-PNFU3, 0x027e: HD-LC3
+    "",
+    "",
+    "-d sat"
+  },
+  { "USB: Buffalo SSD-PSTA/N; ASMedia",
+    "0x0411:0x039d",
+    "",
+    "",
+    "-d sntasmedia"
+  },
+  // LG Electronics
+  { "USB: LG Mini HXD5; JMicron",
+    "0x043e:0x70f1",
+    "", // 0x0100
+    "",
+    "-d usbjmicron"
+  },
+  // Hitachi / Renesas

@@ -1,0 +1,43 @@
+  { "USB: Sharkoon 2-Bay RAID Box; ", // USB 3.0
+    "0x6795:0x2756",
+    "", // 0x0100
+    "",
+    "-d sat"
+  },
+  // Transcend
+  { "USB: ; ",
+    "0x8564:0x7000",
+    "", // 0x8000
+    "",
+    "-d sat"
+  },
+  // Other World Computing
+  { "USB: USB3 to SATA; ",
+    "0x7825:0xa2a4",
+    "", // 0x4101
+    "",
+    "-d sat"
+  },
+  // JMicron II
+  { "USB: ; JMicron JMS566",
+    "0xa152:0xb566",
+    "", // 0x0223
+    "",
+    "-d sat"
+  },
+  // 0xab12 (?)
+  { "USB: ; JMicron JMS578",
+    "0xab12:0x34cd",
+    "", // 0x0405
+    "",
+    "-d sat"
+  },
+  // Logilink
+  { "USB: ; ",
+    "0xabcd:0x610[34]", // 0x6103: LogiLink AU0028A V1.0 USB 3.0 to IDE & SATA Adapter
+      // 0x6104: LogiLink PCCloneEX Lite
+    "",
+    "",
+    "-d sat"
+  },
+/*
